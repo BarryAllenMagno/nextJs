@@ -21,7 +21,7 @@ export default function Home() {
         e.preventDefault()
 
         try {
-            const res = await fetch(`${API_BASE_URL}//saveMember`, {
+            const res = await fetch(`${API_BASE_URL}/saveMember`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
