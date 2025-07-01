@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { API_BASE_URL } from '../../../../lib/config';
 
 export default function Home() {
     const [form, setForm] = useState({
@@ -20,7 +21,7 @@ export default function Home() {
         e.preventDefault()
 
         try {
-            const res = await fetch('http://127.0.0.1:8000/api/saveMember', {
+            const res = await fetch(`${API_BASE_URL}//saveMember`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
