@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState } from 'react';
 import { API_BASE_URL } from '../../../../lib/config';
 
 export default function Home() {
