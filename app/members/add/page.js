@@ -1,9 +1,11 @@
 'use client'
 
-import { useState } from 'react';
-import { API_BASE_URL } from '../../../../lib/config';
+import { useState } from 'react'
+import { useRouter } from 'next/navigation';
+import { API_BASE_URL } from '../../../lib/config';
 
 export default function Home() {
+    const router = useRouter();
     const [form, setForm] = useState({
         first_name: '',
         last_name: '',
